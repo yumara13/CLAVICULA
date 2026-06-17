@@ -147,7 +147,80 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+```css
+/* ==========================
+   RESPONSIVE CELULAR
+   ========================== */
 
+@media screen and (max-width:768px){
+
+    .header-top{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+        padding:15px;
+    }
+
+    .logo-area{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-area img{
+        width:60px;
+    }
+
+    .logo-area h3{
+        font-size:18px;
+    }
+
+    .autor{
+        text-align:center;
+        font-size:16px;
+    }
+
+    header{
+        padding:30px 15px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    .container{
+        width:95%;
+        padding:20px 0;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .imagenes{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+
+    ul{
+        padding-left:18px;
+    }
+}
 </style>
 </head>
 
