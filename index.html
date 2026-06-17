@@ -1,176 +1,278 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>La Clavícula - Anatomía Humana</title>
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
 
-    body{
-        background: linear-gradient(135deg,#fff9db,#ffe066);
-        color:#4d3b00;
-        line-height:1.6;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-    header{
-        background: linear-gradient(90deg,#f59f00,#ffd43b);
-        color:white;
-        text-align:center;
-        padding:60px 20px;
-        box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    }
+body{
+    background:linear-gradient(135deg,#fff9db,#ffe066);
+    color:#4d3b00;
+    line-height:1.6;
+}
 
-    header h1{
-        font-size:3rem;
-        margin-bottom:10px;
-    }
+/* CABECERA */
 
-    header p{
-        font-size:1.2rem;
-    }
+.header-top{
+    background:#f59f00;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    .container{
-        width:90%;
-        max-width:1200px;
-        margin:auto;
-        padding:40px 0;
-    }
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
 
-    .card{
-        background:white;
-        margin-bottom:30px;
-        padding:25px;
-        border-radius:15px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.1);
-        transition:0.3s;
-    }
+.logo-area img{
+    width:70px;
+    height:auto;
+}
 
-    .card:hover{
-        transform:translateY(-5px);
-    }
+.logo-area h3{
+    font-size:20px;
+}
 
-    h2{
-        color:#d97706;
-        margin-bottom:15px;
-        border-left:6px solid #f59f00;
-        padding-left:10px;
-    }
+.autor{
+    text-align:right;
+    font-weight:bold;
+}
 
-    ul{
-        padding-left:25px;
-    }
+/* PORTADA */
 
-    li{
-        margin-bottom:8px;
-    }
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(90deg,#ffd43b,#fab005);
+    color:white;
+}
 
-    .hero-image{
-        width:100%;
-        max-width:600px;
-        display:block;
-        margin:20px auto;
-        border-radius:15px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    }
+header h1{
+    font-size:3rem;
+}
 
-    .grid{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-        gap:20px;
-    }
+header p{
+    font-size:1.2rem;
+}
 
-    footer{
-        background:#f59f00;
-        color:white;
-        text-align:center;
-        padding:20px;
-        margin-top:30px;
-    }
+/* CONTENEDOR */
 
-    .highlight{
-        background:#fff3bf;
-        padding:15px;
-        border-left:5px solid #fab005;
-        border-radius:10px;
-    }
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#d97706;
+    border-left:6px solid #f59f00;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* IMÁGENES */
+
+.imagenes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+.imagen-box{
+    text-align:center;
+}
+
+.imagen-box img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.imagen-box h3{
+    margin-top:10px;
+    color:#d97706;
+}
+
+/* TARJETAS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.highlight{
+    background:#fff3bf;
+    padding:15px;
+    border-left:5px solid #fab005;
+    border-radius:10px;
+}
+
+footer{
+    background:#f59f00;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
 </style>
 </head>
+
 <body>
 
+<div class="header-top">
+
+    <div class="logo-area">
+
+        <!-- CAMBIAR POR TU LOGO -->
+        <img src="TECBA.png" alt="Logo TECBA">
+
+        <h3>Tecnológico Boliviano Alemán</h3>
+
+    </div>
+
+    <div class="autor">
+        Por: Jhery Quito Rivera
+    </div>
+
+</div>
+
 <header>
+
     <h1>La Clavícula</h1>
-    <p>Estudio Anatómico de la Cintura Escapular</p>
+
+    <p>Huesos de los Miembros Superiores</p>
+
 </header>
 
 <div class="container">
 
     <div class="card">
+
         <h2>1. Cintura Escapular</h2>
+
         <p>
-            La cintura escapular es la estructura anatómica que une los miembros superiores
-            al tronco. Está formada por dos huesos principales:
+            La cintura escapular es la estructura que une los miembros superiores al tronco.
         </p>
+
+        <p><strong>Está formada por:</strong></p>
 
         <ul>
             <li>Clavícula</li>
-            <li>Escápula (Omóplato)</li>
+            <li>Escápula (omóplato)</li>
         </ul>
 
         <div class="highlight">
-            <strong>Funciones principales:</strong>
+
+            <strong>Funciones:</strong>
+
             <ul>
                 <li>Une el miembro superior al esqueleto axial.</li>
                 <li>Permite gran movilidad del hombro.</li>
                 <li>Sirve de inserción para músculos.</li>
                 <li>Transmite fuerzas entre el brazo y el tronco.</li>
             </ul>
+
         </div>
+
     </div>
 
     <div class="card">
+
         <h2>1.1 Clavícula</h2>
 
         <p>
-            La clavícula es un hueso largo con forma de "S" que se encuentra entre el
-            esternón y la escápula. Es un elemento fundamental para la estabilidad
-            y movilidad del hombro.
+            Hueso largo con forma de "S" situado entre el esternón y la escápula.
         </p>
 
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Clavicle_-_animation.gif/640px-Clavicle_-_animation.gif"
-            alt="Clavícula"
-            class="hero-image">
+        <div class="imagenes">
+
+            <div class="imagen-box">
+
+                <!-- IMAGEN DE LA CLAVÍCULA -->
+                <img src="clavicula.jpg" alt="Clavícula">
+
+                <h3>Clavícula</h3>
+
+            </div>
+
+            <div class="imagen-box">
+
+                <!-- IMAGEN DE LAS ARTICULACIONES -->
+                <img src="articulaciones.jpg" alt="Articulaciones">
+
+                <h3>Articulaciones de la Clavícula</h3>
+
+            </div>
+
+        </div>
+
     </div>
 
     <div class="grid">
 
         <div class="card">
+
             <h2>Ubicación</h2>
+
             <p>
-                Se sitúa en la parte superior del tórax, extendiéndose desde el
-                esternón hasta el acromion de la escápula.
+                Se encuentra entre el esternón y la escápula,
+                formando parte de la cintura escapular.
             </p>
+
         </div>
 
         <div class="card">
+
             <h2>Articulaciones</h2>
+
             <ul>
                 <li>Articulación esternoclavicular (con el esternón).</li>
                 <li>Articulación acromioclavicular (con el acromion de la escápula).</li>
             </ul>
+
         </div>
 
     </div>
 
     <div class="card">
+
         <h2>Accidentes Anatómicos</h2>
+
         <ul>
             <li>Extremo esternal.</li>
             <li>Extremo acromial.</li>
@@ -178,10 +280,13 @@
             <li>Línea trapezoidea.</li>
             <li>Surco del músculo subclavio.</li>
         </ul>
+
     </div>
 
     <div class="card">
+
         <h2>Inserciones Musculares Principales</h2>
+
         <ul>
             <li>Esternocleidomastoideo.</li>
             <li>Deltoides.</li>
@@ -189,24 +294,29 @@
             <li>Pectoral mayor.</li>
             <li>Subclavio.</li>
         </ul>
+
     </div>
 
     <div class="grid">
 
         <div class="card">
+
             <h2>Irrigación</h2>
+
             <p>
-                La clavícula recibe irrigación principalmente de ramas de la
-                arteria toracoacromial y de la arteria supraescapular.
+                Ramas de la arteria toracoacromial y supraescapular.
             </p>
+
         </div>
 
         <div class="card">
+
             <h2>Inervación</h2>
+
             <p>
-                Está relacionada con el nervio subclavio y los nervios
-                supraclaviculares.
+                Nervio subclavio y nervios supraclaviculares.
             </p>
+
         </div>
 
     </div>
@@ -214,8 +324,9 @@
 </div>
 
 <footer>
-    Anatomía Humana • Estudio de la Clavícula • Proyecto GitHub
+Anatomía Humana • Clavícula • Tecnológico Boliviano Alemán
 </footer>
 
 </body>
 </html>
+```
